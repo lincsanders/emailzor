@@ -5,6 +5,7 @@
 	<link href="/css/reset.css" rel="stylesheet" type="text/css" />
 	<link href="/css/style.css" rel="stylesheet" type="text/css" />
 	<script src="/js/jquery-1.7.2.js"></script>
+	<script src="/js/handlebars-1.0.0.beta.6.js"></script>
 	
 	<!-- Socket connection -->
 	<script src="/socket.io/socket.io.js"></script>
@@ -23,13 +24,26 @@
 			$("#left-panel div").removeClass('selected');
 			$this.addClass('selected');
 		})
+
+		$('#nav-inbox').on('click', function(e){
+			socket.emit('request-inbox');
+
+			e.preventDefault(); return false;
+		});
 	})
 	</script>
 	<div id="left-panel">
-		<div class="row4 selected">Inbawx</div>
+		<div id="nav-inbox" class="row4 selected">Inbawx</div>
 		<div class="row4">Sent</div>
 		<div class="row4">Trash</div>
 		<div class="row4"></div>
 	</div>
+
+	<div id="list-panel">
+	</div>
+
+	<script id="email-list-col" type="text/x-handlebars-template">
+		<p>THIS IS AN EMAIL</p>
+	</script>
 </body>
 </html>

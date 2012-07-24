@@ -10,6 +10,8 @@ body {
 */
 
 #left-panel {
+	background-color: inherit;
+	position: fixed;
 	width: 200px;
 	height: 100%;
 	border-right: 1px solid #AAA;
@@ -17,6 +19,7 @@ body {
 	font-size: 25px;
 
 	text-align: center;
+	z-index: 1;
 }
 
 #left-panel div {
@@ -26,6 +29,14 @@ body {
 	padding-top: 10px;
 	cursor: pointer;
 	text-shadow: 1px 1px 1px #BBB;
+	z-index: 2;
+}
+
+#list-panel {
+	position: absolute;
+	left: -200px;
+	width: 200px;
+	padding-left: 200px;
 }
 
 .selected {
@@ -33,6 +44,7 @@ body {
 	cursor: default;
 	background-color: #E5E5E5;
 	text-shadow: 2px 2px 2px #BBB !important;
+	z-index: 99;
 }
 
 /*
@@ -47,3 +59,7 @@ body {
 .col2 {width: 50%;}
 .col4 {width: 25%;}
 .col5 {width: 20%;}
+
+.left {float: left;}
+.right {float: right;}
+.clear {clear: both;}
