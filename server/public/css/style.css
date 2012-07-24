@@ -1,0 +1,49 @@
+body {
+	background-color: #F5F5F5;
+	font-family: Helvetica;
+	-webkit-font-smoothing: antialiased !important;
+	text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+}
+
+/*
+	Nav elements
+*/
+
+#left-panel {
+	width: 200px;
+	height: 100%;
+	border-right: 1px solid #AAA;
+	-webkit-box-shadow: 0px 1px 3px #AAA;
+	font-size: 25px;
+
+	text-align: center;
+}
+
+#left-panel div {
+	position: relative;
+
+	height: 40px;
+	padding-top: 10px;
+	cursor: pointer;
+	text-shadow: 1px 1px 1px #BBB;
+}
+
+.selected {
+	-webkit-box-shadow: 0px 1px 3px #777 inset;
+	cursor: default;
+	background-color: #E5E5E5;
+	text-shadow: 2px 2px 2px #BBB !important;
+}
+
+/*
+	General Layout Thingies
+*/
+
+.row1 {height: 100%;}
+.row2 {height: 50%;}
+.row4 {height: 25%;}
+
+.col1 {width: 100%;}
+.col2 {width: 50%;}
+.col4 {width: 25%;}
+.col5 {width: 20%;}
