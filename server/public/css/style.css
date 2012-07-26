@@ -33,16 +33,21 @@ body {
 }
 
 #list-panel {
+	border-right: 1px solid #AAA;
 	position: absolute;
-	left: -200px;
-	width: 200px;
+	width: 30%;
 	padding-left: 200px;
+	font-size: 10px;
+}
+
+#list-panel .email-row {
+	padding: 20px;
 }
 
 .selected {
 	-webkit-box-shadow: 0px 1px 3px #777 inset;
 	cursor: default;
-	background-color: #E5E5E5;
+	background-color: #F0F0F0;
 	text-shadow: 2px 2px 2px #BBB !important;
 	z-index: 99;
 }
