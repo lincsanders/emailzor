@@ -13,5 +13,11 @@ module.exports.listen = function(server){
 				socket.emit('receive-inbox', emails);
 			})
 		})
+
+		socket.on('request-email', function(data){
+			Email.find({where: {id: data.id}}).success(function(email){
+				socket.emit('load-email', email);
+			})
+		})
 	});	
 }

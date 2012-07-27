@@ -36,12 +36,46 @@ body {
 	border-right: 1px solid #AAA;
 	position: absolute;
 	width: 30%;
+	min-width: 400px;
 	padding-left: 200px;
-	font-size: 10px;
+	font-size: 14px;
+	line-height: 150%;
+	background-color: white;
 }
 
 #list-panel .email-row {
-	padding: 20px;
+	padding: 10px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	border-bottom: 1px solid #AAA;
+}
+
+#list-panel .email-row div {
+	padding-bottom: 5px;
+}
+
+#right-panel {
+	position: absolute;
+	right: 0px;
+	
+	width: 30%;
+}
+
+.email-row .from {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.email-row .time {
+	color: blue;
+}
+
+.email-row .subject {
+	font-weight: bold;
+}
+
+.email-row .summary {
+	color: #555;
 }
 
 .selected {

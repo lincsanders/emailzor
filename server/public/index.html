@@ -30,6 +30,7 @@
 	</div>
 
 	<div id="right-panel">
+		
 	</div>
 
 </body>
@@ -37,11 +38,13 @@
 <!-- Templates, WHOOO -->
 
 <script id="email-list-col" type="text/x-handlebars-template">
-	<div class="email-row">
-		<div class="subject">Lorem ipsum ut ad eu velit consectetur ut consequat magna deserunt consectetur labore. </div>
-		<div class="subject">lincoln@paperton.com</div>
-		<div class="subject">lincoln@paperton.com, lincoln@paperton.com, lincoln@paperton.com</div>
-		<div class="subject">Lorem ipsum occaecat minim esse enim Ut dolor eu proident fugiat id esse in. Lorem ipsum mollit qui est eiusmod labore ut cillum consequat non reprehenderit ad ad deserunt. </div>
+	<div class="email-row" data-id="{{id}}">
+		<div class="from left">{{from}}</div>
+		<div class="time right">12:54pm</div>
+		<div class="clear"></div>
+
+		<div class="subject">{{subject}}</div>
+		<div class="summary">{{body}}</div>
 	</div>
 </script>
 

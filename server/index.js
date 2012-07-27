@@ -3,7 +3,7 @@ var express = require('express'),
 	io = require(__dirname + '/sockets').listen(server)
 
 module.exports.listen = function(){
-	server.listen(80)
+	server.listen(8000)
 
 	//serve the public folder
 	server.use(express.static(__dirname + '/public'))
